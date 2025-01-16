@@ -73,6 +73,7 @@ class GameViewModel : ViewModel() {
                 currentScrambledWord = pickRandomWordAndShuffle(),
                 score =  updatedScore,
                 isGuessedWrong = false,
+                currentWordCount = currentState.currentWordCount.inc()
                 )
         }
     }
